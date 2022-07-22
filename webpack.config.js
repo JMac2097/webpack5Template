@@ -51,7 +51,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "WebPack App",
       filename: "index.html",
-      template: "./src/template.html",
+      template: "./src/pages/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "WebPack App -- about us",
+      filename: "about.html",
+      template: "./src/pages/about.html",
     }),
     new BundleAnalyzerPlugin(),
   ],
